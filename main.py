@@ -1,12 +1,9 @@
+def fibonacci_iterative(n):
+    a, b = 0, 1
+    for _ in range(n):
+        a, b = b, a + b
+    return a
 
-
-
-num1 = num2 = 1
-n = int(input())
-print(num1, num2, end=' ')
-for i in range(2, n):
-    num1, num2 = num1, num1 + num2
-    print(num2, end=' ')
-
-
-
+# Пример использования
+n = 10
+print(f"Число Фибоначчи на позиции {n}: {fibonacci_iterative(n)}")
